@@ -1,0 +1,58 @@
+export const departments = [
+  {
+    id: 'general',
+    name: 'General Physician',
+    icon: '🩺',
+    avgWaitMin: 12,
+    description: 'Routine checkups, fevers, general consultations.',
+    activeToken: 24,
+    queueLength: 7,
+  },
+  {
+    id: 'dental',
+    name: 'Dental Care',
+    icon: '🦷',
+    avgWaitMin: 20,
+    description: 'Cavities, cleanings, extractions, orthodontics.',
+    activeToken: 8,
+    queueLength: 3,
+  },
+  {
+    id: 'pediatrics',
+    name: 'Pediatrics',
+    icon: '🧸',
+    avgWaitMin: 15,
+    description: 'Child health, vaccinations, growth checkups.',
+    activeToken: 15,
+    queueLength: 5,
+  },
+  {
+    id: 'orthopedic',
+    name: 'Orthopedics',
+    icon: '🦴',
+    avgWaitMin: 25,
+    description: 'Bone, joint, and muscle injuries or pain.',
+    activeToken: 5,
+    queueLength: 9,
+  },
+  {
+    id: 'cardiology',
+    name: 'Cardiology',
+    icon: '❤️',
+    avgWaitMin: 30,
+    description: 'Heart checkups, ECG, blood pressure concerns.',
+    activeToken: 3,
+    queueLength: 4,
+  },
+  {
+    id: 'ent',
+    name: 'ENT',
+    icon: '👂',
+    avgWaitMin: 10,
+    description: 'Ear, nose, and throat conditions.',
+    activeToken: 19,
+    queueLength: 2,
+  },
+];
+
+export const getDepartmentById = (id) => departments.find((d) => d.id === id);
